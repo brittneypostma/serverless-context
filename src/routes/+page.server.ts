@@ -5,6 +5,6 @@ export const load: PageServerLoad = async (event: RequestEvent) => {
 	const context = event.platform?.context;
 	console.log(context);
 	return {
-		context
+		context: context.clientContext
 	};
 };
